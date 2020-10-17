@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automation.mobile.AppiumTest">
+      <class name="automation.covid.tests.TestPositivityRatioTest">
         <methods>
-          <include name="init"/>
-          <include name="testApp"/>
+          <include name="setup"/>
+          <include name="verifyTestPositivity"/>
+          <include name="tearDownTest"/>
         </methods>
-      </class> <!-- automation.mobile.AppiumTest -->
+      </class> <!-- automation.covid.tests.TestPositivityRatioTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
